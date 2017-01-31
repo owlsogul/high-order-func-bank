@@ -13,13 +13,13 @@ pushed.append(unpushed.last!)
 /*for item in unpushed {
     pushed.append(item)
 }*/
+for item in unpushed {
+    pushed.append(item)
+}
 
 pushed.removeLast()
 
 print(pushed)
-
-
-
 
 
 
@@ -46,6 +46,9 @@ print(Arr3)
 
 
 // 문자열에서 i개수 세기
+
+
+// 문자열에서 e개수 세기
 let sentence = "pneumonoultramicroscopicsilicovolcanoconiosis"
 
 var countE: Int = 0
@@ -117,6 +120,7 @@ var solve4 = arr.map { (item: Int) -> Int in
 print(solve4)
 
 
+
 //배열의 세번째 위치에 새로운 숫자 넣기
 var insertArr = [6, 5, 2, 9]
 
@@ -125,5 +129,4 @@ insertArr.insert(3, at: 2)
 print(insertArr)
 
 
-//문제가 곧 해답
 
