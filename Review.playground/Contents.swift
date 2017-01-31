@@ -10,6 +10,9 @@ var pushed:[Int] = []
 
 pushed.append(unpushed.last!)
 
+/*for item in unpushed {
+    pushed.append(item)
+}*/
 for item in unpushed {
     pushed.append(item)
 }
@@ -36,6 +39,13 @@ for item in arr2 {
 print(combineArr)
 
 
+//해답
+var Arr3 = arr1 + arr2
+print(Arr3)
+
+
+
+// 문자열에서 i개수 세기
 
 
 // 문자열에서 e개수 세기
@@ -52,6 +62,11 @@ for char in sentence.characters {
 print(countE)
 
 
+var eCount = Array(sentence.characters).filter{ (item: Character) -> Bool in
+    return item == "i"
+}.count
+
+
 
 // 가장 큰 수 뽑기
 let findBiggest = [6, 5, 21, 9, 15]
@@ -65,6 +80,9 @@ for item in findBiggest {
 }
 
 print(biggest)
+
+//해답
+findBiggest.max()
 
 
 
@@ -87,7 +105,19 @@ for item in arr {
     
 }
 
+//해답
 print(upOrDown)
+
+var solve4 = arr.map { (item: Int) -> Int in
+    if item >= 5{
+        return item - item % 10 + 10
+    }
+    else {
+        return item - item % 10
+    }
+}
+
+print(solve4)
 
 
 
@@ -97,7 +127,6 @@ var insertArr = [6, 5, 2, 9]
 insertArr.insert(3, at: 2)
 
 print(insertArr)
-
 
 
 
