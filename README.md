@@ -1,4 +1,4 @@
-# cuddly-broccoli
+# higher-order functions 
 
 For 문을 고차함수로 변경하는 리포지터리입니다.
 
